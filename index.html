@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Siswa Baru</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        fieldset {
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        label {
+            display: inline-block;
+            width: 140px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            padding: 8px;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #00c3ff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        marquee {
+            font-weight: bold;
+            font-size: 14px;
+            color: #2d3436;
+            margin-top: 20px;
+        }
+
+        audio {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Formulir Pendaftaran Siswa Baru</h1>
+    <img src="logo.jpeg" alt="">
+    <p>Silakan isi formulir di bawah ini dengan data yang benar dan lengkap</p>
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Data Siswa</legend>
+
+            <p>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+            </p>
+
+            <p>
+                <label for="nisn">NISN</label>
+                <input type="number" id="nisn" name="nisn" placeholder="Masukkan NISN">
+            </p>
+
+            <p>
+                <label>Jenis Kelamin</label>
+                <input type="radio" id="laki" name="gender" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </p>
+
+            <p>
+                <label for="tgl">Tanggal Lahir</label>
+                <input type="date" id="tgl" name="tanggal_lahir">
+            </p>
+
+            <p>
+                <label for="jurusan">Jurusan</label>
+                <select name="jurusan" id="jurusan">
+                    <option value="RPL">RPL</option>
+                    <option value="DKV">DKV</option>
+                    <option value="TKJ">TKJ</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h4>Putar audio informasi berikut:</h4>
+    <audio src="bel.mp3" controls></audio>
+
+    <hr>
+
+    <marquee direction="left">Selamat datang di halaman pendaftaran siswa baru SMK RPL!</marquee>
+
+    <h4>Daftar Jurusan</h4>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Jurusan</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>RPL</td>
+            <td>Rekayasa Perangkat Lunak</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>TKJ</td>
+            <td>Teknik Komputer dan Jaringan</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>MM</td>
+            <td>Multimedia</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
